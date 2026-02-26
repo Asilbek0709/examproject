@@ -1,7 +1,7 @@
 "use client"
 import "../globals.css"
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -21,6 +21,11 @@ export default function Slider() {
         enabled: true, 
         momentumBounce: false,
         momentum: true 
+      }}
+      breakpoints={{
+        320: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
       }}
         >
       <SwiperSlide className="feedback">

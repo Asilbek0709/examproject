@@ -404,8 +404,8 @@ header {
    ============================================== */
 .wrapper {
   display: flex;
-  padding: 2rem clamp(1.5rem, 6vw, 8rem);
-  gap: 2rem;
+  padding: 3rem clamp(1.5rem, 6vw, 8rem);
+  gap: 3rem;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -413,18 +413,18 @@ header {
 .feedback {
   display: flex;
   flex-direction: column;
-  padding: clamp(2rem, 3vw, 4rem) 2rem 1.5rem 2rem;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
   border-radius: 0.5rem;
   border: 0.5px solid #D3E8F4;
   flex: 1 1 20rem;
   min-height: 18rem;
+  gap: 1.5rem;
 }
 
 .feedback p {
   color: #013A4C;
   font-size: clamp(0.9375rem, 0.9vw + 0.2rem, 1.125rem);
-  max-height: 5rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .feedback-link {
@@ -432,14 +432,14 @@ header {
   text-decoration: none;
   color: #89285B;
   margin-top: auto;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 
 .author {
   display: flex;
   align-items: center;
   margin-top: auto;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   gap: 1rem;
 }
 
@@ -448,10 +448,11 @@ header {
    ============================================== */
 .integrations {
   display: flex;
+  flex-direction: row;
   padding: 2rem clamp(1.5rem, 8vw, 12rem);
   align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: clamp(2rem, 5vw, 5rem);
   width: 100%;
 }
 
@@ -472,13 +473,13 @@ header {
 .integrations-img {
   display: flex;
   align-items: center;
-  flex: 1 1 auto;
+  flex: 1 1 40%;
 }
 
 .IntegrationContainer {
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
+  flex: 1 1 40%;
 }
 
 .integration {
@@ -890,8 +891,8 @@ header {
   }
 
   .integrations {
-    flex-direction: column;
-    text-align: center;
+    gap: 2rem;
+    padding: 2rem clamp(1.5rem, 4vw, 6rem);
   }
 
   .integrations-img {
@@ -975,8 +976,19 @@ header {
     max-width: 100%;
   }
 
+  .integrations {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .integrations-img {
+    justify-content: center;
+  }
+
   .wrapper {
     flex-direction: column;
+    gap: 2rem;
   }
 
   .feedback {

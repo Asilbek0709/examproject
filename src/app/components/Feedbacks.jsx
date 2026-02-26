@@ -22,11 +22,6 @@ export default function Slider() {
         momentumBounce: false,
         momentum: true 
       }}
-      breakpoints={{
-        320: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      }}
         >
       <SwiperSlide className="feedback">
             <div >
